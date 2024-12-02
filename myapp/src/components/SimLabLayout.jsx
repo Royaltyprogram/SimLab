@@ -3,6 +3,7 @@ import { Github, ExternalLink, Heart, Share2, Eye, Clock, HelpCircle, Search } f
 import { useNavigate, useParams } from 'react-router-dom';
 import ProjectileMotion from './simualtions/ExampleSimulation';
 import RiemannSumSimulation from './simualtions/RiemannSumSimulation';
+import AngularMomentumSimulation from './simualtions/AngularMomentumSimulation';
 import { initializeApp } from "firebase/app";
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
@@ -40,6 +41,7 @@ const storage = getStorage(app);
 const SIMULATION_COMPONENTS = {
 	ProjectileMotion,
 	RiemannSumSimulation,
+	AngularMomentumSimulation,
 	
 	// ... Add other simulation components
   };

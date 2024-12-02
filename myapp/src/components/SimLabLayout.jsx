@@ -532,6 +532,14 @@ const SimulationDetail = () => {
 					</a>
 				  </div>
 				</div>
+
+            {/* Top Advertisement Placeholder */}
+            <div className="bg-white rounded-2xl shadow-md min-h-[90px] flex items-center justify-center">
+              <div className="text-center">
+                <p className="text-gray-500 font-medium">Advertisement</p>
+                <p className="text-sm text-gray-400">Google AdSense Placeholder</p>
+              </div>
+            </div>
 	
 	
 				{/* Main Simulation Container */}

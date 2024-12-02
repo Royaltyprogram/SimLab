@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, ExternalLink, Heart, Share2, Eye, Clock, HelpCircle, Search } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
-import ProjectileMotion from './simualtions/ExampleSimulation';
 import RiemannSumSimulation from './simualtions/RiemannSumSimulation';
 import AngularMomentumSimulation from './simualtions/AngularMomentumSimulation';
 import { initializeApp } from "firebase/app";
@@ -39,7 +38,6 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 // Simulation components mapping
 const SIMULATION_COMPONENTS = {
-	ProjectileMotion,
 	RiemannSumSimulation,
 	AngularMomentumSimulation,
 	
@@ -96,24 +94,41 @@ const SIMULATION_COMPONENTS = {
   
 		  <div className="flex items-center gap-4">
 			<a 
-			  href="https://github.com/Royaltyprogram/SimLab" 
-			  target="_blank" 
-			  rel="noopener noreferrer"
-			  className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900 transition-colors"
+				href="https://github.com/Royaltyprogram/SimLab" 
+				target="_blank" 
+				rel="noopener noreferrer"
+				className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900 transition-colors"
 			>
-			  <Github size={20} />
-			  <span>GitHub</span>
+				<Github size={20} />
+				<span>GitHub</span>
 			</a>
 			<a 
-			  href="mailto:edulens43@gmail.com"
-			  className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900 transition-colors"
+				href="https://twitter.com/sim_lab" 
+				target="_blank" 
+				rel="noopener noreferrer"
+				className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900 transition-colors"
 			>
-			  <ExternalLink size={20} />
-			  <span>Contact</span>
+				<svg 
+				viewBox="0 0 24 24" 
+				width="20" 
+				height="20" 
+				className="fill-current"
+				aria-hidden="true"
+				>
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+				</svg>
+				<span>X (Twitter)</span>
 			</a>
+			<a 
+				href="mailto:edulens43@gmail.com"
+				className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900 transition-colors"
+			>
+				<ExternalLink size={20} />
+				<span>Contact</span>
+			</a>
+			</div>
 		  </div>
 		</div>
-	  </div>
 	);
   };
 
